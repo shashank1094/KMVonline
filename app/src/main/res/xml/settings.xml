@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="College">
+        <CheckBoxPreference
+            android:title="Sync notifications from website"
+            android:key="College's Website"
+            android:defaultValue="true"
+            android:enabled="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Principal">
+        <CheckBoxPreference
+            android:title="Dr. Madhu Pruthi"
+            android:key="Dr. Madhu Pruthi"
+            android:defaultValue="true"
+            android:enabled="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Library">
+        <CheckBoxPreference
+            android:title="Dr. Rittu Sethi (Librarian)"
+            android:key="Dr. Rittu Sethi"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Administration Office">
+    <CheckBoxPreference
+            android:title="Mr. Raj Kumar (Section Officer)"
+            android:key="Mr. Raj Kumar"
+            android:defaultValue="false"/>
+        </PreferenceCategory>
+    <PreferenceCategory android:title="Accounts">
+    <CheckBoxPreference
+            android:title="Mr. P. K. Bhatia (Section Officer)"
+            android:key="Mr. P. K. Bhatia"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Department of Computer Science">
+        <CheckBoxPreference
+            android:title="Ms. Srishti Vashishtha"
+            android:key="Ms. Srishti Vashishtha"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="Mr. Rakesh Kumar"
+            android:key="Mr. Rakesh Kumar"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

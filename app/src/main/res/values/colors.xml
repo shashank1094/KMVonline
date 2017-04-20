@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="tanColorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="appOrange">#FFC107</color>
+    <color name="appOrangeDark">#FFA000</color>
+    <color name="appRed">#E53935</color>
+    <color name="appRedDark">#B71C1C</color>
+    <color name="appGreen">#4CAF50</color>
+    <color name="appDarkOrange">#FF5722</color>
+    <color name="appPurple">#9C27B0</color>
+    <color name="appGreenDark">#388E3C</color>
+    <color name="appBlue">#2196F3</color>
+    <color name="appLightGray">#ECEFF1</color>
+    <color name="appDarkGray">#455A64</color>
+    <color name="appBlueDark">#1976D2</color>
+    <color name="appWhite">#fff</color>
+</resources>

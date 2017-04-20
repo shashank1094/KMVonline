@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:baselineAligned="false"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp">
+            <RelativeLayout
+                android:id="@+id/circleBg"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle"
+                android:layout_width="50dp"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/admin_icon"
+                    android:id="@+id/department_imageview"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    tools:text="Heading"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="#000"
+                    android:id="@+id/heading_textView"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3dp"
+                        tools:text="jan"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:id="@+id/month_textView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        tools:text="10"
+                        android:textSize="12sp"
+                        android:paddingLeft="4dp"
+                        android:id="@+id/day_textView"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+
+                tools:text="The college will remain close from this month as we are not in support of AAp party foolish people dont know anytjing"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textColor="#9E9E9E"
+                android:ellipsize="end"
+                android:id="@+id/description_textView"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                tools:text="Dr. Madhu Pruthi"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="end"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:id="@+id/teacherName"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+

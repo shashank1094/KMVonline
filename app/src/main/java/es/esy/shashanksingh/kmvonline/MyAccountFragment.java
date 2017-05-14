@@ -169,7 +169,7 @@ public class MyAccountFragment extends Fragment implements  LoaderManager.Loader
                         if (networkInfo != null && networkInfo.isConnected()) {
                             SharedPreferences sharedPreferences = getActivity().getSharedPreferences(Config.SHARED_PREF_NAME_LOGIN_DETAILS, Context.MODE_PRIVATE);
                             String user = sharedPreferences.getString(Config.NAME_SHARED_PREF,"student");
-                                new MyAccountFragment.deleteAllNow().execute(user);
+                            new MyAccountFragment.deleteAllNow().execute(user);
                         }
                         else{
                             //Toast.makeText(getActivity(),"No internet. Try after some time.",Toast.LENGTH_SHORT).show();
@@ -205,12 +205,12 @@ public class MyAccountFragment extends Fragment implements  LoaderManager.Loader
         String name=preferences.getString(Config.NAME_SHARED_PREF, "Name");
         String sortOrder = collegeNotificationContract.collegeNotificationEntry.COLUMN_REMOTE_ID + " DESC";
         String finalSelection=collegeNotificationContract.collegeNotificationEntry.COLUMN_TEACHER_NAME+" IN (?)";
-            return new CursorLoader(getActivity(),
-                    collegeNotificationContract.collegeNotificationEntry.CONTENT_URI,
-                    COLLEGE_NOTIFICATION_COLUMNS,
-                    finalSelection,
-                    new String[]{name},
-                    sortOrder);
+        return new CursorLoader(getActivity(),
+                collegeNotificationContract.collegeNotificationEntry.CONTENT_URI,
+                COLLEGE_NOTIFICATION_COLUMNS,
+                finalSelection,
+                new String[]{name},
+                sortOrder);
     }
 
     @Override

@@ -174,8 +174,8 @@ public  class collegeNotificationFragment extends Fragment implements  LoaderMan
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-            getActivity().getMenuInflater().inflate(R.menu.search_menu, menu);
-                // Associate searchable configuration with the SearchView
+        getActivity().getMenuInflater().inflate(R.menu.search_menu, menu);
+        // Associate searchable configuration with the SearchView
         SearchManager searchManager =
                 (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
         SearchView searchView =
@@ -202,10 +202,10 @@ public  class collegeNotificationFragment extends Fragment implements  LoaderMan
     }
 
 
-private void updateCollegeNotifications() {
-    CollegeNotificationSyncAdapter.syncImmediately(getActivity());
-    collegeNotificationFragment.refreshLayout.setRefreshing(false);
-}
+    private void updateCollegeNotifications() {
+        CollegeNotificationSyncAdapter.syncImmediately(getActivity());
+        collegeNotificationFragment.refreshLayout.setRefreshing(false);
+    }
 
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
@@ -259,7 +259,7 @@ private void updateCollegeNotifications() {
                     sortOrder);
         }
 
-        }
+    }
 
 
     @Override

@@ -119,8 +119,8 @@ public class SearchResultsActivity extends AppCompatActivity implements  LoaderM
                 "Mr. Raj Kumar",
                 "Mr. P. K. Bhatia",
                 "College's Website",
-        "Ms. Srishti Vashishtha",
-        "Mr. Rakesh Kumar"};
+                "Ms. Srishti Vashishtha",
+                "Mr. Rakesh Kumar"};
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         StringBuilder selection=new StringBuilder(collegeNotificationContract.collegeNotificationEntry.COLUMN_TEACHER_NAME+" IN (");
 
@@ -135,7 +135,7 @@ public class SearchResultsActivity extends AppCompatActivity implements  LoaderM
 
         selection.deleteCharAt(selection.length()-1);
         selection.append(") AND ( "+
-                        collegeNotificationContract.collegeNotificationEntry.COLUMN_TITLE+" LIKE '%"+query+"%' OR "+
+                collegeNotificationContract.collegeNotificationEntry.COLUMN_TITLE+" LIKE '%"+query+"%' OR "+
                 collegeNotificationContract.collegeNotificationEntry.COLUMN_TEACHER_NAME+" LIKE '%"+query+"%' OR "+
                 collegeNotificationContract.collegeNotificationEntry.COLUMN_DESCRIPTION+" LIKE '%"+query+"%' )");
         String finalSelection=selection.toString();
@@ -161,13 +161,13 @@ public class SearchResultsActivity extends AppCompatActivity implements  LoaderM
 //                    sortOrder);
 //        }
 //        else {
-            return new CursorLoader(this,
-                    collegeNotificationContract.collegeNotificationEntry.CONTENT_URI,
-                    COLLEGE_NOTIFICATION_COLUMNS,
-                    finalSelection,
-                    selectionArgs,
-                    sortOrder);
-        }
+        return new CursorLoader(this,
+                collegeNotificationContract.collegeNotificationEntry.CONTENT_URI,
+                COLLEGE_NOTIFICATION_COLUMNS,
+                finalSelection,
+                selectionArgs,
+                sortOrder);
+    }
 //    }
 
     @Override

@@ -26,5 +26,5 @@ public class Settings extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.settings);
         }
-            }
+    }
 }

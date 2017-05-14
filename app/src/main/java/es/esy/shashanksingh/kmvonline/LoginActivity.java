@@ -59,7 +59,6 @@ public class LoginActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        getSupportActionBar().hide();
         //Initializing views
         editTextUsername = (EditText) findViewById(R.id.editTextUsername);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -165,8 +164,8 @@ public class LoginActivity extends AppCompatActivity {
         if(username.length()<1 || username.length()>25) {
             usernameInputLayout.setError("Invalid Username");
 
-                //Shake Animation if username is not valid
-                YoYo.with(Techniques.Shake)
+            //Shake Animation if username is not valid
+            YoYo.with(Techniques.Shake)
                     .duration(1200)
                     .repeat(1)
                     .playOn(usernameInputLayout);
@@ -183,7 +182,7 @@ public class LoginActivity extends AppCompatActivity {
         if(password.length()<1 || password.length()>25) {
             passworInputLayout.setError("Invalid Password");
             //Bounce Animation if password is not valid
-                YoYo.with(Techniques.Bounce)
+            YoYo.with(Techniques.Bounce)
                     .duration(1200)
                     .repeat(1)
                     .playOn(passworInputLayout);

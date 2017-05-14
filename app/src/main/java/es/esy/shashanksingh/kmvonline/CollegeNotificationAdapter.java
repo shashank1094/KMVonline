@@ -31,7 +31,7 @@ public class CollegeNotificationAdapter extends CursorAdapter implements Filtera
     public Cursor runQueryOnBackgroundThread(CharSequence constraint) {
         return super.runQueryOnBackgroundThread(constraint);
     }
-//zxcvbnm
+    //zxcvbnm
     private int findImageResource(int dept){
         int tempId=0;
         switch (dept) {
@@ -58,7 +58,7 @@ public class CollegeNotificationAdapter extends CursorAdapter implements Filtera
         return tempId;
     }
 
-//zxcvbnm
+    //zxcvbnm
     private int findResourceId(int dept){
         int tempId=0;
         switch (dept) {
